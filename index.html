@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Feedback Analyzer</title>
 </head>
 <body>
     <header>
@@ -21,20 +21,20 @@
             <h2>Welcome to the Feedback Analyzer</h2>
             <p>Add your feedback below:</p>
             <form>
-                <input type="file" name="feedback-file" accept=".txt,.csv"> <br><BR>
+                <input type="file" name="feedback-file" accept=".txt,.csv"> <br><br>
                 <button type="submit">Analyze</button>
             </form>
         </section>
         <section>
             <h2><SMALL>RESULTS</SMALL></h2>
-            <pre><code>Main Problems:</code></pre>
-            <textarea name="main problems" rows="5" cols="30" placeholder="AI Output"></textarea>
+            <label>Main Problems</label>
+            <div id="main-problems">AI output will appear here...</div>
             <br>
-            <pre><code>Suggestions:</code></pre>
-            <textarea name="suggestions" rows="5" cols="30" placeholder="Suggestions will appear here..."></textarea>
-            <BR>
-                <pre><code>Summary:</code></pre>
-            <textarea name="summary" rows="5" cols="30" placeholder="Summary will appear here..."></textarea>
+            <label>Suggestions</label>
+            <div id="suggestions">AI output will appear here...</div>
+            <br>
+            <label>Summary</label>
+            <div id="summary">AI output will appear here...</div>
         </section>
     </main>
     <footer>
