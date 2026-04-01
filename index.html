@@ -4,38 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Feedback Analyzer</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <h1>Feedback Analyzer</h1>
     </header>
     <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
+        <a id="home" href="#">Home</a>
+        <a id="about" href="#">About</a>
+        <a id="contact" href="#">Contact</a>
     </nav>
     <main>
         <section>
             <h2>Welcome to the Feedback Analyzer</h2>
             <p>Add your feedback below:</p>
             <form>
-                 <textarea name="feedback" rows="6" placeholder="Paste your customer feedback here..."></textarea><br><br>
+                 <textarea name="feedback" rows="6" cols="108" placeholder="Paste your customer feedback here..."></textarea><br><br>
                 <input type="file" name="feedback-file" accept=".txt,.csv"> <br><br>
                 <button type="submit">Analyze</button>
             </form>
         </section>
         <section>
-            <h2><small>RESULTS</small></h2>
+            <h2>RESULTS</h2>
+            <section class="hq">
             <label>Main Problems</label>
-            <div id="main-problems">AI output will appear here...</div>
+            <div>AI output will appear here...</div>
+            </section>
             <br>
+            <section class="hq">
             <label>Suggestions</label>
-            <div id="suggestions">AI output will appear here...</div>
-            <br>
+            <div id="gy">AI output will appear here...</div>
+            </section>
+            </br>
+            <section class="hq">
             <label>Summary</label>
-            <div id="summary">AI output will appear here...</div>
+            <div id="gy">AI output will appear here...</div>
+            </section>
         </section>
     </main>
     <footer>
